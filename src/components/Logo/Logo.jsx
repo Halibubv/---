@@ -1,11 +1,11 @@
 import houseIcon from '../../assets/icons/house.svg'
-import './Logo.css'
+import styles from './Logo.module.css'
 
 function Logo() {
   return (
-    <a className="logo" href="#">
+    <a className={styles.logo} href="#">
       <img src={houseIcon} alt="" width="30" height="30" />
-      <span className="logo__text">тихий дом</span>
+      <span className={styles.text}>тихий дом</span>
     </a>
   )
 }

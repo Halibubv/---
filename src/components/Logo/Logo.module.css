@@ -4,7 +4,7 @@
   gap: 12px;
 }
 
-.logo__text {
+.text {
   font-family: 'Lora', Georgia, serif;
   font-size: 29px;
   color: var(--color-text);

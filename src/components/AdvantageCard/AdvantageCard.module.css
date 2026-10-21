@@ -5,18 +5,18 @@
   gap: 16px;
 }
 
-.advantage__info {
+.info {
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
 
-.advantage__title {
+.title {
   font-size: 14px;
   font-weight: 500;
 }
 
-.advantage__text {
+.text {
   font-size: 12px;
   color: var(--color-muted);
 }

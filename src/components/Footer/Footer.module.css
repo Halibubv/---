@@ -3,27 +3,27 @@
   background: var(--color-footer);
 }
 
-.footer__top {
+.top {
   display: flex;
   justify-content: space-between;
   gap: 32px;
 }
 
-.footer__about {
+.about {
   width: 360px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.footer__text {
+.text {
   max-width: 280px;
   font-size: 13px;
   line-height: 1.7;
   color: var(--color-muted);
 }
 
-.footer__column {
+.column {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -31,33 +31,33 @@
   color: var(--color-muted);
 }
 
-.footer__column--shop {
+.columnShop {
   width: 180px;
 }
 
-.footer__column--help {
+.columnHelp {
   width: 240px;
 }
 
-.footer__column--contacts {
+.columnContacts {
   width: 220px;
 }
 
-.footer__column a:hover {
+.column a:hover {
   color: var(--color-accent);
 }
 
-.footer__title {
+.title {
   font-size: 14px;
   font-weight: 500;
   color: var(--color-text);
 }
 
-.footer__accent {
+.accent {
   color: var(--color-accent);
 }
 
-.footer__bottom {
+.bottom {
   display: flex;
   justify-content: space-between;
   gap: 16px;
@@ -69,13 +69,13 @@
 }
 
 @media (max-width: 900px) {
-  .footer__top,
-  .footer__bottom {
+  .top,
+  .bottom {
     flex-direction: column;
   }
 
-  .footer__about,
-  .footer__column {
+  .about,
+  .column {
     width: auto;
   }
 }

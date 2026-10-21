@@ -1,24 +1,24 @@
 import vaseImage from '../../assets/images/vase.jpg'
 import heartIcon from '../../assets/icons/heart.svg'
 import plusIcon from '../../assets/icons/plus.svg'
-import './ProductCard.css'
+import styles from './ProductCard.module.css'
 
 function ProductCard() {
   return (
-    <article className="product-card">
-      <div className="product-card__photo">
-        <img className="product-card__image" src={vaseImage} alt="Ваза «Тишина»" />
-        <span className="product-card__badge">Бестселлер</span>
-        <button className="product-card__favorite" type="button" aria-label="В избранное">
+    <article className={styles.productCard}>
+      <div className={styles.photo}>
+        <img className={styles.image} src={vaseImage} alt="Ваза «Тишина»" />
+        <span className={styles.badge}>Бестселлер</span>
+        <button className={styles.favorite} type="button" aria-label="В избранное">
           <img src={heartIcon} alt="" width="19" height="19" />
         </button>
       </div>
-      <div className="product-card__info">
-        <h3 className="product-card__title">Ваза «Тишина»</h3>
-        <p className="product-card__subtitle">Керамика · песочный</p>
-        <div className="product-card__bottom">
-          <p className="product-card__price">2 490 ₽</p>
-          <button className="product-card__add" type="button" aria-label="Добавить в корзину">
+      <div className={styles.info}>
+        <h3 className={styles.title}>Ваза «Тишина»</h3>
+        <p className={styles.subtitle}>Керамика · песочный</p>
+        <div className={styles.bottom}>
+          <p className={styles.price}>2 490 ₽</p>
+          <button className={styles.add} type="button" aria-label="Добавить в корзину">
             <img src={plusIcon} alt="" width="17" height="17" />
           </button>
         </div>

@@ -1,21 +1,21 @@
 import ProductCard from '../ProductCard/ProductCard'
 import arrowIcon from '../../assets/icons/arrow-right.svg'
-import './Products.css'
+import styles from './Products.module.css'
 
 function Products() {
   return (
-    <section className="container products">
-      <div className="products__header">
-        <div className="products__intro">
-          <h2 className="products__title">Любимые вещи для дома</h2>
-          <p className="products__text">Простые формы. Натуральные материалы. Каждый день.</p>
+    <section className={`container ${styles.products}`}>
+      <div className={styles.header}>
+        <div className={styles.intro}>
+          <h2 className={styles.title}>Любимые вещи для дома</h2>
+          <p className={styles.text}>Простые формы. Натуральные материалы. Каждый день.</p>
         </div>
-        <a className="products__link" href="#">
+        <a className={styles.link} href="#">
           Смотреть всё
           <img src={arrowIcon} alt="" width="17" height="17" />
         </a>
       </div>
-      <div className="products__list">
+      <div className={styles.list}>
         <ProductCard />
         <ProductCard />
         <ProductCard />

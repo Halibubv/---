@@ -1,39 +1,39 @@
 import Logo from '../Logo/Logo'
-import './Footer.css'
+import styles from './Footer.module.css'
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className={styles.footer}>
       <div className="container">
-        <div className="footer__top">
-          <div className="footer__about">
+        <div className={styles.top}>
+          <div className={styles.about}>
             <Logo />
-            <p className="footer__text">
+            <p className={styles.text}>
               Нужные вещи для простых радостей.
               <br />
               С теплом к вашему дому.
             </p>
           </div>
-          <nav className="footer__column footer__column--shop">
-            <h3 className="footer__title">Магазин</h3>
+          <nav className={`${styles.column} ${styles.columnShop}`}>
+            <h3 className={styles.title}>Магазин</h3>
             <a href="#">Главная</a>
             <a href="#">Каталог</a>
             <a href="#">Корзина</a>
           </nav>
-          <div className="footer__column footer__column--help">
-            <h3 className="footer__title">Покупателям</h3>
+          <div className={`${styles.column} ${styles.columnHelp}`}>
+            <h3 className={styles.title}>Покупателям</h3>
             <p>Доставка и оплата</p>
             <p>Обмен и возврат</p>
             <p>Уход за изделиями</p>
           </div>
-          <div className="footer__column footer__column--contacts">
-            <h3 className="footer__title">Мы рядом</h3>
-            <a className="footer__accent" href="mailto:hello@tihiydom.ru">hello@tihiydom.ru</a>
+          <div className={`${styles.column} ${styles.columnContacts}`}>
+            <h3 className={styles.title}>Мы рядом</h3>
+            <a className={styles.accent} href="mailto:hello@tihiydom.ru">hello@tihiydom.ru</a>
             <p>Ежедневно, 10:00–19:00</p>
-            <p className="footer__accent">ВКонтакте&nbsp;&nbsp;·&nbsp;&nbsp;Telegram</p>
+            <p className={styles.accent}>ВКонтакте&nbsp;&nbsp;·&nbsp;&nbsp;Telegram</p>
           </div>
         </div>
-        <div className="footer__bottom">
+        <div className={styles.bottom}>
           <p>© 2026 Тихий дом</p>
           <p>Политика конфиденциальности</p>
           <p>Дом начинается с деталей</p>

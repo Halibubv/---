@@ -1,10 +1,10 @@
 import AdvantageCard from '../AdvantageCard/AdvantageCard'
-import './Advantages.css'
+import styles from './Advantages.module.css'
 
 function Advantages() {
   return (
     <section className="container">
-      <div className="advantages">
+      <div className={styles.advantages}>
         <AdvantageCard />
         <AdvantageCard />
         <AdvantageCard />
