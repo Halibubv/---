@@ -1,0 +1,11 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo__text {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 29px;
+  color: var(--color-text);
+}

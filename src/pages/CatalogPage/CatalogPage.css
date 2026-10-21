@@ -1,0 +1,149 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-top: 28px;
+  padding-bottom: 64px;
+}
+
+.catalog__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.catalog__heading {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.catalog__title {
+  font-size: 44px;
+}
+
+.catalog__count,
+.catalog__text {
+  color: var(--color-muted);
+}
+
+.catalog__count {
+  font-size: 14px;
+}
+
+.catalog__text {
+  font-size: 15px;
+}
+
+.catalog__toolbar {
+  display: flex;
+  gap: 24px;
+}
+
+.catalog__search {
+  flex: 1;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.catalog__search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+  color: var(--color-text);
+  background: none;
+}
+
+.catalog__search input::placeholder {
+  color: var(--color-muted);
+}
+
+.catalog__search:focus-within {
+  border-color: var(--color-accent);
+}
+
+.catalog__sort {
+  width: 320px;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--color-text);
+  background: #fff;
+  cursor: pointer;
+}
+
+.catalog__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.catalog__category {
+  height: 38px;
+  padding: 0 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--color-text);
+  background: var(--color-bg);
+  cursor: pointer;
+}
+
+.catalog__category:hover {
+  border-color: var(--color-accent);
+}
+
+.catalog__category--active {
+  border-color: var(--color-accent);
+  color: #fff;
+  background: var(--color-accent);
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px 24px;
+}
+
+.catalog__end {
+  padding-top: 6px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+@media (max-width: 1100px) {
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog__title {
+    font-size: 34px;
+  }
+
+  .catalog__toolbar {
+    flex-direction: column;
+  }
+
+  .catalog__sort {
+    width: 100%;
+  }
+
+  .catalog__list {
+    grid-template-columns: 1fr;
+  }
+}
