@@ -1,15 +1,22 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
-import Layout from './components/Layout/Layout'
-import HomePage from './pages/HomePage/HomePage'
+import Header from './components/Header/Header'
+import Hero from './components/Hero/Hero'
+import Advantages from './components/Advantages/Advantages'
+import Products from './components/Products/Products'
+import Subscribe from './components/Subscribe/Subscribe'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Route>
-    </Routes>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Advantages />
+        <Products />
+        <Subscribe />
+      </main>
+      <Footer />
+    </>
   )
 }
 

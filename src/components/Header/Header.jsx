@@ -1,11 +1,6 @@
-import { NavLink } from 'react-router-dom'
 import Logo from '../Logo/Logo'
 import truckIcon from '../../assets/icons/truck.svg'
 import './Header.css'
-
-function getLinkClass({ isActive }) {
-  return isActive ? 'header__link header__link--active' : 'header__link'
-}
 
 function Header() {
   return (
@@ -17,17 +12,17 @@ function Header() {
             <Logo />
           </div>
           <nav className="header__menu">
-            <NavLink className={getLinkClass} to="/" end>Главная</NavLink>
-            <span className="header__link">Каталог</span>
-            <span className="header__link">
+            <a className="header__link header__link--active" href="#">Главная</a>
+            <a className="header__link" href="#">Каталог</a>
+            <a className="header__link" href="#">
               Корзина
               <span className="header__count">2</span>
-            </span>
+            </a>
           </nav>
-          <p className="header__contact">
+          <a className="header__contact" href="#">
             <img src={truckIcon} alt="" width="18" height="18" />
             Доставка и оплата
-          </p>
+          </a>
         </div>
       </div>
     </header>

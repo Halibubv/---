@@ -10,10 +10,10 @@ function Products() {
           <h2 className="products__title">Любимые вещи для дома</h2>
           <p className="products__text">Простые формы. Натуральные материалы. Каждый день.</p>
         </div>
-        <p className="products__link">
+        <a className="products__link" href="#">
           Смотреть всё
           <img src={arrowIcon} alt="" width="17" height="17" />
-        </p>
+        </a>
       </div>
       <div className="products__list">
         <ProductCard />
