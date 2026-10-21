@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import ProductCard from '../ProductCard/ProductCard'
 import arrowIcon from '../../assets/icons/arrow-right.svg'
 import './Products.css'
@@ -11,10 +10,10 @@ function Products() {
           <h2 className="products__title">Любимые вещи для дома</h2>
           <p className="products__text">Простые формы. Натуральные материалы. Каждый день.</p>
         </div>
-        <Link className="products__link" to="/catalog">
+        <p className="products__link">
           Смотреть всё
           <img src={arrowIcon} alt="" width="17" height="17" />
-        </Link>
+        </p>
       </div>
       <div className="products__list">
         <ProductCard />

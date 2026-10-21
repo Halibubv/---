@@ -18,11 +18,11 @@ function Header() {
           </div>
           <nav className="header__menu">
             <NavLink className={getLinkClass} to="/" end>Главная</NavLink>
-            <NavLink className={getLinkClass} to="/catalog">Каталог</NavLink>
-            <NavLink className={getLinkClass} to="/cart">
+            <span className="header__link">Каталог</span>
+            <span className="header__link">
               Корзина
               <span className="header__count">2</span>
-            </NavLink>
+            </span>
           </nav>
           <p className="header__contact">
             <img src={truckIcon} alt="" width="18" height="18" />

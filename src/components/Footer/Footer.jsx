@@ -18,8 +18,8 @@ function Footer() {
           <nav className="footer__column footer__column--shop">
             <h3 className="footer__title">Магазин</h3>
             <Link to="/">Главная</Link>
-            <Link to="/catalog">Каталог</Link>
-            <Link to="/cart">Корзина</Link>
+            <p>Каталог</p>
+            <p>Корзина</p>
           </nav>
           <div className="footer__column footer__column--help">
             <h3 className="footer__title">Покупателям</h3>

@@ -50,21 +50,6 @@ img {
   padding: 0 var(--page-padding);
 }
 
-.breadcrumbs {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 12px;
-}
-
-.breadcrumbs__link {
-  color: var(--color-muted);
-}
-
-.breadcrumbs__link:hover {
-  color: var(--color-accent);
-}
-
 @media (max-width: 900px) {
   :root {
     --page-padding: 24px;
