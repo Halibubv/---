@@ -16,7 +16,7 @@ function Hero() {
           <p className={styles.text}>
             Тактильные ткани, любимая керамика и мягкий свет. Вещи, с которыми хорошо быть дома.
           </p>
-          <Button />
+          <Button to="/catalog">Перейти в каталог</Button>
         </div>
         <img className={styles.image} src={bannerImage} alt="Уютный интерьер" />
       </div>

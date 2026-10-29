@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Logo from '../Logo/Logo'
 import styles from './Footer.module.css'
 
@@ -16,9 +17,9 @@ function Footer() {
           </div>
           <nav className={`${styles.column} ${styles.columnShop}`}>
             <h3 className={styles.title}>Магазин</h3>
-            <a href="#">Главная</a>
-            <a href="#">Каталог</a>
-            <a href="#">Корзина</a>
+            <Link to="/">Главная</Link>
+            <Link to="/catalog">Каталог</Link>
+            <Link to="/cart">Корзина</Link>
           </nav>
           <div className={`${styles.column} ${styles.columnHelp}`}>
             <h3 className={styles.title}>Покупателям</h3>

@@ -1,10 +1,12 @@
 .productCard {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 .photo {
+  display: block;
   position: relative;
   height: 280px;
   overflow: hidden;
@@ -57,6 +59,10 @@
 
 .title {
   font-size: 16px;
+}
+
+.title:hover {
+  color: var(--color-accent);
 }
 
 .subtitle {
